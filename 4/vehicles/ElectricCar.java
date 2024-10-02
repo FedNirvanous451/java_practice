@@ -3,9 +3,14 @@ package vehicles;
 public class ElectricCar extends Car {
     private double batteryCapacity;
 
-    public ElectricCar(String ownerName, String insuranceNumber, String engineType, double batteryCapacity) {
-        super(ownerName, insuranceNumber, "Electric");
+    public ElectricCar(String ownerName, String model, String license, String color,
+     String insuranceNumber, String engineType, int year, double batteryCapacity) {
+        super(ownerName, model, license, color, insuranceNumber, "Electric", year);
         this.batteryCapacity = batteryCapacity;
+    }
+
+    public String vehicleType() {
+        return "Electric Car";
     }
 
     // геттер
