@@ -1,13 +1,13 @@
 package vehicles;
 
-public class ElectricCar extends Car {
+public class ElectricCar extends Car implements ElectricVehicle{
     private double batteryCapacity;
 
     public ElectricCar(String ownerName, String model, String license, String color,
      String insuranceNumber, String engineType, int year, double batteryCapacity) {
         super(ownerName, model, license, color, insuranceNumber, engineType, year);
-        this.engineType = "Electric";
         this.batteryCapacity = batteryCapacity;
+        this.engineType = "Electric";
     }
 
     public String vehicleType() {

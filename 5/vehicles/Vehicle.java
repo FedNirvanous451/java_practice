@@ -7,7 +7,7 @@ public abstract class Vehicle {
     int year; // год выпуска
     String ownerName; // имя владельца
     String insuranceNumber; // страховой номер
-    protected String engineType; // тип двигателя
+    String engineType; // тип двигателя
     
     public abstract String vehicleType();
 
