@@ -13,7 +13,8 @@ public class TestCar {
         car2.set_insuranceNumber("2354G5");
         car2.to_string();
 
-        ElectricCar electry = new ElectricCar("Эссславик", "СЛАВА", "39580", "black", "34fg82", "V8", 1993, 25.76);
+        ElectricCar electry = new ElectricCar("Эссславик", "СЛАВА",
+         "39580", "black", "34fg82", "V8", 1993, 25.76);
         electry.set_year(1999);
         electry.set_ownerName("Шама");
         electry.set_insuranceNumber("736Fh4");
