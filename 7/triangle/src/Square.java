@@ -28,3 +28,4 @@ public class Square extends GeometricObject implements Comparable {
     }
     
 }
+

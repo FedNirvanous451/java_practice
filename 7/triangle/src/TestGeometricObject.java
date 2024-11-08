@@ -55,3 +55,4 @@ public class TestGeometricObject {
         System.out.println("Площадь равна " + five[4].getArea());
     }
 }
+

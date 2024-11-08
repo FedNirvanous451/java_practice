@@ -37,3 +37,5 @@ public class Triangle extends GeometricObject{
         System.out.println("\nТреугольник: сторона1 = " + side1 + " сторона2 = " + side2 + " сторона 3 = " + side3);
     }
 }
+
+
