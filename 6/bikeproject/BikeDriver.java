@@ -8,6 +8,7 @@ public class BikeDriver {
 		RoadBike bike2 = new RoadBike("drop", "tourer", "semi-grip", "comfort", 14, 25, 18);		
 		MountainBike bike3 = new MountainBike();
 		Bike bike4 = new Bike();
+		RoadBike bike_ = new RoadBike(20);
 		
 		bike1.printDescription();
 		bike2.printDescription();
@@ -16,8 +17,8 @@ public class BikeDriver {
 
 		// моя реализация
 		bike1.setPostHeight(20);
-		System.out.println(bike1.getPostHeight());
-		System.out.println(bike1.getTyreWidth());
+		System.out.println(bike_.getPostHeight());
+		System.out.println(bike2.getTyreWidth());
 	}//end method main
 
 }//end class BikeDriver

@@ -38,11 +38,11 @@ public class TestGeometricObject {
         System.out.println("Площадь равна " + tr_one.getArea());
         System.out.println("Периметр равен " + tr_one.getPerimeter());
 
-        System.out.println(GeometricObject.max(tr_one.getArea(), circle.getArea())); // тест статического метода max(x, y)
+        System.out.println("max(tr.one, circle) = " + GeometricObject.max(tr_one.getArea(), circle.getArea())); // тест статического метода max(x, y)
 
         // задание 4
         Circle[] five = new Circle[5];
-        five[1] = new Circle("grey", false, 3.45);
+        five[0] = new Circle("grey", false, 3.45);
         five[1] = new Circle("yellow", false, 5);
         five[2] = new Circle("blue", true, 67);
         five[3] = new Circle("black", false, 2);

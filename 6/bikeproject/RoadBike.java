@@ -2,11 +2,11 @@ package bikeproject;
 
 public class RoadBike extends Bike{
 	
-	private int  tyreWidth, postHeight;
+	private int tyreWidth, postHeight;
 	
 	public RoadBike()
 	{
-		this("drop", "racing", "tread less", "razor", 19, 20, 20);
+		super("drop", "racing", "tread less", "razor", 19);
 		this.postHeight = 20;
 	}//end constructor
 	

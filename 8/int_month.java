@@ -6,8 +6,10 @@ public class int_month {
         class Is {
             // класс со статическим методом определения високосного года
             public static boolean is_year(int x) {
-                if (x % 4 == 0 && x % 100 == 0 && x % 400 == 0) {
-                    return true;
+                if (x % 4 == 0) {
+                    if ((x % 100 != 0) || (x % 400 == 0)) {
+                        return true;
+                    }
                 }
                 return false;
             }
@@ -27,8 +29,14 @@ public class int_month {
             if (amount == 2) {
                 System.out.print("Введите год: ");
                 year = input.nextInt();
-                if (Is.is_year(year)) {
+                if (Is.is_year(year) && year > 0) {
                     System.out.println("Год високосный и " + months[amount - 1] + " has 29 days");
+                }
+                else if (year <= 0) {
+                    System.out.println("Введен недопустимый год.");
+                }
+                else {
+                    System.out.println("Год невисокосный и " + months[amount - 1] + " has 28 days");
                 }
             }
             else {
