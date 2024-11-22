@@ -16,7 +16,7 @@ public class BikeDriver {
 		bike4.printDescription();
 
 		// моя реализация
-		bike1.setPostHeight(20);
+		System.out.println("------");
 		System.out.println(bike_.getPostHeight());
 		System.out.println(bike2.getTyreWidth());
 	}//end method main

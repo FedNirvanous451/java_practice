@@ -30,15 +30,15 @@ public class MountainBike extends Bike{
 		return this.suspension;
 	}
 
-    public void setSuspension(String newValue) {
+    public void setSuspension(String suspension) {
 		this.suspension = suspension;
 	}
-    
+	
     public String getType() {
 		return this.type;
 	}
-    
-    public void setType(String newValue) {
+
+    public void setType(String type) {
 		this.type = type;
 	}
 }//end class MountainBike

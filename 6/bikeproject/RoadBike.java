@@ -6,13 +6,12 @@ public class RoadBike extends Bike{
 	
 	public RoadBike()
 	{
-		super("drop", "racing", "tread less", "razor", 19);
-		this.postHeight = 20;
+		this("drop", "racing", "tread less", "razor", 19, 20, 22);
 	}//end constructor
 	
 	public RoadBike(int postHeight)
 	{
-		this("drop", "racing", "tread less", "razor", 19, 20, 20);
+		this("drop", "racing", "tread less", "razor", 19, 20, postHeight);
 	}//end constructor
 		
 	public RoadBike(String handleBars, String frame, String tyres, String seatType, int numGears,
@@ -37,11 +36,12 @@ public class RoadBike extends Bike{
 		this.tyreWidth = tyreWidth;
 	}
     
+
     public int getPostHeight() {
 		return this.postHeight;
 	}
-
-	 
+	
+	
     public void setPostHeight(int postHeight) {
 		this.postHeight = postHeight;
 	}
