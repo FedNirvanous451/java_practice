@@ -18,7 +18,7 @@ public class Triangle extends GeometricObject{
         this.side3 = side3;
 
         // задание 2 - создание обработки исключения
-        if ((side1 + side2 <= side3) || (side1 + side3 <= side2) || (side3 + side2 <= side1))
+        if ((side1 + side2 >= side3) || (side1 + side3 >= side2) || (side3 + side2 >= side1))
         throw new IllegalTriangleException("Не выполняется правило треугольника - недопустимые значения",
         side1, side2, side3);
     }    
