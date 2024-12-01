@@ -1,9 +1,10 @@
 import java.util.ArrayList;
 
 // реализация стека с помощью динамического массива
-public class MyStack<E> {
-    private ArrayList<E> list = new ArrayList<E>();
+public class MyStack<Object> {
+    private ArrayList<Object> list = new ArrayList<>();
 
+    public MyStack() {} ;
     public boolean isEmpty() { // проверка на пустоту
         if (list.size() == 0) {
             return true;
@@ -15,17 +16,23 @@ public class MyStack<E> {
         return list.size();
     }
 
-    public E peek() { // возвращает элемент на вершине стека без удаления
+    public Object peek() {
+        if (isEmpty()) {
+            throw new IllegalStateException("Стек пустой");
+        } // возвращает элемент на вершине стека без удаления
         return list.get(getSize() - 1);
     }
     
-    public E pop() { // возвращает элемент на вершине стека с удалением
-        int index = getSize() - 1;
-        list.remove(index);
-        return list.get(index);
+    public Object pop() {
+        if (isEmpty()) {
+            throw new IllegalStateException("Стек пустой");
+        } // возвращает элемент на вершине стека с удалением
+        Object index = list.get(getSize() - 1);
+        list.remove(getSize() - 1);
+        return index;
     }
 
-    public void push(E o) {
+    public void push(Object o) {
         list.add(o);
     }
 }
