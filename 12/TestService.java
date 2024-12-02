@@ -1,3 +1,4 @@
+// вариант 2 - реализация паттерна FactoryMethod
 public class TestService {
     public static void main(String[] args) {
         PizzaDelivery pizza = new PizzaDelivery();
