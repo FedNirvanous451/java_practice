@@ -1,4 +1,4 @@
-// вариант 7
+// вариант 7 - реализация паттерна Proxy
 public class TestProxyImage {
     public static void main(String[] args) {
         Image image = new ProxyImage("plain.png");
