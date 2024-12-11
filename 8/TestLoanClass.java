@@ -17,7 +17,7 @@ public class TestLoanClass {
             // Получить сумму кредита
             System.out.print("Введите сумму кредита в руб., например, 120000,95: ");
             double loanAmount =  input.nextDouble();
-
+            
             // выюрасываю исключение согласно условию задачи
             if (annualInterestRate <= 0 || numberOfYears <= 0 || loanAmount <= 0){
                 throw new IllegalArgumentException ("Годовая ставка, срок или сумма кредита меньше или равна нулю.");
@@ -35,7 +35,8 @@ public class TestLoanClass {
                     + (int)(loan.getTotalPayment() * 100) / 100.0 + " руб.");
         }
         catch (InputMismatchException e) {
-            System.out.println("Введено не целое число.");
+            System.out.println("Введено не число.");
         }
     }
 }
+
